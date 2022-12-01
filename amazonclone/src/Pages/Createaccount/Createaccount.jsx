@@ -1,13 +1,36 @@
 import React from "react";
 import NavigateNextRoundedIcon from '@mui/icons-material/NavigateNextRounded';
+var User = data;
 export default function() {
+  function Loginemail () {
+    {
+      const [data, setData] = useState({
+        username: ''});
+        const [form, setForm] = useState({
+        username: ''});
+        const [submit, submitted] = useState(false);
+        const printValues = e => {
+          e.preventDefault();
+          setForm({
+            username: data.username
+          });
+          submitted(true);
+
+        };
+        const updateField = e => {
+          setData({
+            ...data,
+            [e.target.name]: e.target.value
+          });
+        };
+  }
   return (
     <div>
       <button><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPM91b3vzb_B_SULQSum7a568z_4XX4RuzJuae0c3K&s" alt = "" /></button>
       <span>Create Account</span>
       <span>Your name</span>
       <form>
-        <input type="text" />
+        <input type = "text" value={data.username} name="username"/>
     </form>
     <span>Mobile number</span>
     <span> <form>
