@@ -9,8 +9,16 @@ import ImageScroller from "react-image-scroller";
 import SearchIcon from "@mui/icons-material/Search";
 import { useState } from "react";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import PersonPinIcon from '@mui/icons-material/PersonPin';
+import PersonPinIcon from "@mui/icons-material/PersonPin";
+import { useNavigate } from "react-router-dom";
 export default function Navbar1() {
+  function LoginLayout() {
+  
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+      let path = `./Signin/Signin`; 
+      navigate(path);
+    }
   return (
     <div>
       <Navbar bg="light" expand="lg">
@@ -83,7 +91,7 @@ export default function Navbar1() {
                 <span>Accounts and Lists</span>
                 <div>
                   <span>
-                    <button type="submit">Sign in</button>
+                    <button type="submit" onClick = {routeChange}>Sign in</button>
                   </span>
                   <span>
                     <p>New customer?</p>
@@ -123,7 +131,7 @@ export default function Navbar1() {
               </Nav.Link>
               <ShoppingCartIcon />
             </Nav>
-            
+
             <span>
               <p>Sell</p>
               <p>Best Sellers</p>
