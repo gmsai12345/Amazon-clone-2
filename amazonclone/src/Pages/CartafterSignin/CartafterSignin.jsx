@@ -1,6 +1,6 @@
 import React from "react";
 import CartSidebar from "./Pages/CartSidebar/CartSidebar";
-import Footer from "./Footer/Footer"
+import Footer from "./Footer/Footer";
 export default function () {
   return (
     <div>
