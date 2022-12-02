@@ -1,4 +1,6 @@
 import React from "react";
+import CartSidebar from "./Pages/CartSidebar/CartSidebar";
+import Footer from "./Footer/Footer"
 export default function () {
   return (
     <div>
@@ -29,7 +31,68 @@ export default function () {
           Do you have a promotional code? We'll ask you to enter your claim code
           when it's time to pay.
         </span>
+
       </div>
+      <div><CartSidebar/></div>
+      <div>
+        <span>Frequently repurchased in Pet Supplies</span>
+        <img src = "" alt = ""/>
+        <span>Allter Baby Diaper, Medium (5 - 8 Kg) 28 Pieces</span>
+        <img src = "" alt = ""/>
+        <span>Drools Adult(+1 year) Dry Cat Food, Ocean Fish, 3 kg + 1.2 kg Free</span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+
+      </div>
+      <div>
+        <span>Top picks for you</span>
+        <span>
+        <img src = "" alt = ""/></span>
+        <span>Allter Baby Diaper, Medium (5 - 8 Kg) 28 Pieces</span>
+        <img src = "" alt = ""/>
+        <span>Drools Adult(+1 year) Dry Cat Food, Ocean Fish, 3 kg + 1.2 kg Free</span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        
+
+      </div>
+      <div>
+      <span>Related to items you viewed</span>
+        <span>
+        <img src = "" alt = ""/></span>
+        <span>Allter Baby Diaper, Medium (5 - 8 Kg) 28 Pieces</span>
+        <img src = "" alt = ""/>
+        <span>Drools Adult(+1 year) Dry Cat Food, Ocean Fish, 3 kg + 1.2 kg Free</span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+        <img src = "" alt = ""/>
+        <span></span>
+
+      </div>
+    
+    <Footer/>
     </div>
   );
 }
